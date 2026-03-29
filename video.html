@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Video Tools</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+</head>
+<body data-page="video">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="logo">AI Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="study.html">Study</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a class="active" href="video.html">Video</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="editors.html">Editors</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">Dark</button>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner video-banner">
+    <div class="container">
+      <h1>Video & Audio Tools</h1>
+      <p>AI tools for video generation, voice, animation, and music creation.</p>
+    </div>
+  </section>
+
+  <section class="page-search-section">
+    <div class="container">
+      <input type="text" id="pageSearch" placeholder="Search video tools..." class="page-search" />
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container tool-grid">
+      <div class="tool-card searchable-card" data-name="Runway video generation editing">
+        <div class="tool-top">
+          <div class="tool-icon black">RW</div>
+          <span class="badge yellow">89%</span>
+        </div>
+        <h3>Runway</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Video Generation</p>
+        <p>Useful for text-to-video, editing workflows, and creative video production.</p>
+        <div class="tool-buttons">
+          <a href="https://runwayml.com" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Runway','https://runwayml.com')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Pika Labs animation clips">
+        <div class="tool-top">
+          <div class="tool-icon sky">PK</div>
+          <span class="badge yellow">87%</span>
+        </div>
+        <h3>Pika Labs</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Animation</p>
+        <p>Best for short animated clips and stylized visual outputs.</p>
+        <div class="tool-buttons">
+          <a href="https://pika.art" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Pika Labs','https://pika.art')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="ElevenLabs voice audio narration">
+        <div class="tool-top">
+          <div class="tool-icon blue">11</div>
+          <span class="badge green">98%</span>
+        </div>
+        <h3>ElevenLabs</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Voice Synthesis</p>
+        <p>One of the best tools for realistic voices, dubbing, and narration.</p>
+        <div class="tool-buttons">
+          <a href="https://elevenlabs.io" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('ElevenLabs','https://elevenlabs.io')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Suno music ai songs audio">
+        <div class="tool-top">
+          <div class="tool-icon orange">SN</div>
+          <span class="badge green">92%</span>
+        </div>
+        <h3>Suno AI</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Music Creation</p>
+        <p>Generate songs, melodies, and creative music quickly.</p>
+        <div class="tool-buttons">
+          <a href="https://suno.com" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Suno AI','https://suno.com')">♡ Favorite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2026 AI Hub | Video Tools</p>
+    </div>
+  </footer>
+</body>
+</html>

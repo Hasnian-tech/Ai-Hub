@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="logo">AI Hub</div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="study.html">Study</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="editors.html">Editors</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="favorits.html">Favorites</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">Dark</button>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero hero-home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Student AI Directory</span>
+        <h1>Welcome to AI Hub</h1>
+        <p>
+          AI Hub is a smart website for students to discover the best AI tools for study,
+          coding, research papers, image generation, video editing, productivity,
+          file editing, and software downloads.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="study.html" class="btn primary-btn">Explore Study Tools</a>
+          <a href="coding.html" class="btn secondary-btn">Explore Coding Tools</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="AI futuristic concept" />
+      </div>
+    </div>
+  </section>
+
+  <section class="search-chat-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Ask AI Hub</h2>
+        <p>Ask like a chatbot: which tool is best for you?</p>
+      </div>
+
+      <div class="chat-search-box">
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-bubble bot">
+            Hi! Ask me things like:
+            <br />• best ai for research paper
+            <br />• free coding tool
+            <br />• pdf editor
+            <br />• convert pdf to word
+            <br />• best video ai
+          </div>
+        </div>
+
+        <div class="chat-row">
+          <input type="text" id="toolQuestion" placeholder="Ask about AI tools..." />
+          <button onclick="recommendTool()" class="btn primary-btn">Ask</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ad-slider-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Trending Tools</h2>
+        <p>Featured tools rotate automatically like smart highlights.</p>
+      </div>
+
+      <div class="ad-slider-card" id="adSlider">
+        <div class="ad-label">Featured Tool</div>
+        <h3 id="adTitle">ChatGPT</h3>
+        <p id="adDesc">General study help, writing, summaries, and brainstorming.</p>
+        <a id="adLink" href="https://chatgpt.com" target="_blank" class="btn primary-btn">Open Tool</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Explore Categories</h2>
+        <p>Choose a category and open official tools directly.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="category-card study-card">
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80" alt="Study and research" />
+          <h3>Study & Research</h3>
+          <p>Assignments, citations, research papers, summaries, and learning support.</p>
+          <a href="study.html" class="btn small-btn">Open Category</a>
+        </div>
+
+        <div class="category-card coding-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="Coding tools" />
+          <h3>Coding & Technical</h3>
+          <p>AI coding tools, code editors, Git tools, and software downloads.</p>
+          <a href="coding.html" class="btn small-btn">Open Category</a>
+        </div>
+
+        <div class="category-card design-card">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80" alt="Design tools" />
+          <h3>Design & Images</h3>
+          <p>Create graphics, posters, social posts, AI images, and branding visuals.</p>
+          <a href="design.html" class="btn small-btn">Open Category</a>
+        </div>
+
+        <div class="category-card video-card">
+          <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80" alt="Video tools" />
+          <h3>Video & Audio</h3>
+          <p>Generate videos, voiceovers, music, animation, and multimedia content.</p>
+          <a href="video.html" class="btn small-btn">Open Category</a>
+        </div>
+
+        <div class="category-card productivity-card">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Productivity tools" />
+          <h3>Productivity</h3>
+          <p>Slides, PDF analysis, notes, statistics, and workflow support.</p>
+          <a href="productivity.html" class="btn small-btn">Open Category</a>
+        </div>
+
+        <div class="category-card editors-card">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Editors and converters" />
+          <h3>Editors & Converters</h3>
+          <p>Edit Word, Excel, PDF, and convert files using official online tools.</p>
+          <a href="editors.html" class="btn small-btn">Open Category</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="favorites-preview-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Your Favorite Tools</h2>
+        <p>Click heart buttons on tools pages and they will appear here.</p>
+      </div>
+      <div id="favoritesPreview" class="tool-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>AI Hub</h3>
+        <p>A student-friendly directory for AI tools, editors, converters, and downloads.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <p>Home, Study, Coding, Design, Video, Productivity, Editors, Downloads, Favorites</p>
+      </div>
+      <div>
+        <h4>Purpose</h4>
+        <p>Find the right tool faster and open official websites directly.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AI Hub. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

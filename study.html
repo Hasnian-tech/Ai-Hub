@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Study Tools</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+</head>
+<body data-page="study">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="logo">AI Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="study.html">Study</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="editors.html">Editors</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">Dark</button>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner study-banner">
+    <div class="container">
+      <h1>Study & Research Tools</h1>
+      <p>Best AI tools for students, assignments, citations, and research work.</p>
+    </div>
+  </section>
+
+  <section class="page-search-section">
+    <div class="container">
+      <input type="text" id="pageSearch" placeholder="Search study tools..." class="page-search" />
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container tool-grid" id="studyTools">
+      <div class="tool-card searchable-card" data-name="ChatGPT study writing summaries assignments">
+        <div class="tool-top">
+          <div class="tool-icon blue">CG</div>
+          <span class="badge green">92%</span>
+        </div>
+        <h3>ChatGPT</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> General Study Help</p>
+        <p>Best for summaries, explanations, assignment support, and brainstorming.</p>
+        <div class="tool-buttons">
+          <a href="https://chatgpt.com" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('ChatGPT','https://chatgpt.com')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Claude essay writing research long answers">
+        <div class="tool-top">
+          <div class="tool-icon purple">CL</div>
+          <span class="badge green">95%</span>
+        </div>
+        <h3>Claude</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Human-like Writing</p>
+        <p>Very strong for essays, writing improvement, structured answers, and long explanations.</p>
+        <div class="tool-buttons">
+          <a href="https://claude.ai" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Claude','https://claude.ai')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Gemini google integration productivity research">
+        <div class="tool-top">
+          <div class="tool-icon orange">GM</div>
+          <span class="badge green">91%</span>
+        </div>
+        <h3>Gemini</h3>
+        <p class="tag">Free</p>
+        <p><strong>Best For:</strong> Google Integration</p>
+        <p>Useful for Google-based productivity, study research, and connected workflows.</p>
+        <div class="tool-buttons">
+          <a href="https://gemini.google.com" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Gemini','https://gemini.google.com')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Perplexity citations research paper sources">
+        <div class="tool-top">
+          <div class="tool-icon teal">PX</div>
+          <span class="badge green">96%</span>
+        </div>
+        <h3>Perplexity</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Research / Citations</p>
+        <p>Excellent for finding sources, citations, and research-backed answers.</p>
+        <div class="tool-buttons">
+          <a href="https://www.perplexity.ai" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Perplexity','https://www.perplexity.ai')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Meta AI quick questions student">
+        <div class="tool-top">
+          <div class="tool-icon pink">MA</div>
+          <span class="badge yellow">84%</span>
+        </div>
+        <h3>Meta AI</h3>
+        <p class="tag">Free</p>
+        <p><strong>Best For:</strong> Quick Questions</p>
+        <p>Good for general light usage and quick everyday student questions.</p>
+        <div class="tool-buttons">
+          <a href="https://www.meta.ai" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Meta AI','https://www.meta.ai')">♡ Favorite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2026 AI Hub | Study Tools</p>
+    </div>
+  </footer>
+</body>
+</html>

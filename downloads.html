@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Downloads</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+</head>
+<body data-page="downloads">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="logo">AI Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="study.html">Study</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="editors.html">Editors</a></li>
+          <li><a class="active" href="downloads.html">Downloads</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">Dark</button>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner mixed-banner">
+    <div class="container">
+      <h1>Downloads & Official Apps</h1>
+      <p>Useful apps and official download pages for students, designers, and developers.</p>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container tool-grid">
+      <div class="tool-card searchable-card" data-name="VS Code visual studio code download">
+        <div class="tool-top">
+          <div class="tool-icon navy">VS</div>
+          <span class="badge green">98%</span>
+        </div>
+        <h3>VS Code</h3>
+        <p class="tag">Free Download</p>
+        <p>Download Visual Studio Code from the official site.</p>
+        <div class="tool-buttons">
+          <a href="https://code.visualstudio.com/download" target="_blank" class="btn primary-btn">Download</a>
+          <button class="btn heart-btn" onclick="saveFavorite('VS Code','https://code.visualstudio.com/download')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="GitHub Desktop git download">
+        <div class="tool-top">
+          <div class="tool-icon violet">GH</div>
+          <span class="badge green">97%</span>
+        </div>
+        <h3>GitHub Desktop</h3>
+        <p class="tag">Free Download</p>
+        <p>Official GitHub desktop client for repository management.</p>
+        <div class="tool-buttons">
+          <a href="https://desktop.github.com/" target="_blank" class="btn primary-btn">Download</a>
+          <button class="btn heart-btn" onclick="saveFavorite('GitHub Desktop','https://desktop.github.com/')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="LinkedIn professional network">
+        <div class="tool-top">
+          <div class="tool-icon blue">IN</div>
+          <span class="badge green">99%</span>
+        </div>
+        <h3>LinkedIn</h3>
+        <p class="tag">Official Site</p>
+        <p>Build professional profile, connect with others, and explore careers.</p>
+        <div class="tool-buttons">
+          <a href="https://www.linkedin.com" target="_blank" class="btn primary-btn">Open</a>
+          <button class="btn heart-btn" onclick="saveFavorite('LinkedIn','https://www.linkedin.com')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Canva design graphics website">
+        <div class="tool-top">
+          <div class="tool-icon cyan">CV</div>
+          <span class="badge green">92%</span>
+        </div>
+        <h3>Canva</h3>
+        <p class="tag">Official Site</p>
+        <p>Create designs, slides, social media posts, and more.</p>
+        <div class="tool-buttons">
+          <a href="https://www.canva.com" target="_blank" class="btn primary-btn">Open</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Canva','https://www.canva.com')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Adobe Photoshop download image editing">
+        <div class="tool-top">
+          <div class="tool-icon red">PS</div>
+          <span class="badge green">98%</span>
+        </div>
+        <h3>Adobe Photoshop</h3>
+        <p class="tag">Official Site</p>
+        <p>Advanced image editing and graphics creation software.</p>
+        <div class="tool-buttons">
+          <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="btn primary-btn">Open</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Adobe Photoshop','https://www.adobe.com/products/photoshop.html')">♡ Favorite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2026 AI Hub | Downloads</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hub | Productivity Tools</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+</head>
+<body data-page="productivity">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="logo">AI Hub</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="study.html">Study</a></li>
+          <li><a href="coding.html">Coding</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a class="active" href="productivity.html">Productivity</a></li>
+          <li><a href="editors.html">Editors</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn">Dark</button>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner productivity-banner">
+    <div class="container">
+      <h1>Productivity Tools</h1>
+      <p>AI tools for PDFs, presentations, statistics, notes, and workflow support.</p>
+    </div>
+  </section>
+
+  <section class="page-search-section">
+    <div class="container">
+      <input type="text" id="pageSearch" placeholder="Search productivity tools..." class="page-search" />
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container tool-grid">
+      <div class="tool-card searchable-card" data-name="Humata AI pdf analysis research documents">
+        <div class="tool-top">
+          <div class="tool-icon greenish">HU</div>
+          <span class="badge green">94%</span>
+        </div>
+        <h3>Humata AI</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> PDF Analysis</p>
+        <p>Ask questions from PDFs and understand research documents faster.</p>
+        <div class="tool-buttons">
+          <a href="https://www.humata.ai" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Humata AI','https://www.humata.ai')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Gamma slides presentations">
+        <div class="tool-top">
+          <div class="tool-icon pink">GA</div>
+          <span class="badge green">90%</span>
+        </div>
+        <h3>Gamma</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Slide Decks</p>
+        <p>Create clean, modern presentation slides quickly.</p>
+        <div class="tool-buttons">
+          <a href="https://gamma.app" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Gamma','https://gamma.app')">♡ Favorite</button>
+        </div>
+      </div>
+
+      <div class="tool-card searchable-card" data-name="Julius AI data statistics graphs">
+        <div class="tool-top">
+          <div class="tool-icon teal">JU</div>
+          <span class="badge green">93%</span>
+        </div>
+        <h3>Julius AI</h3>
+        <p class="tag">Freemium</p>
+        <p><strong>Best For:</strong> Data / Statistics</p>
+        <p>Useful for data analysis, graphs, and statistics-related student work.</p>
+        <div class="tool-buttons">
+          <a href="https://julius.ai" target="_blank" class="btn primary-btn">Open Tool</a>
+          <button class="btn heart-btn" onclick="saveFavorite('Julius AI','https://julius.ai')">♡ Favorite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2026 AI Hub | Productivity Tools</p>
+    </div>
+  </footer>
+</body>
+</html>
